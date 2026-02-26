@@ -288,10 +288,6 @@ HTML_TEMPLATE = """
           filePill.style.display = 'inline-flex';
         }
 
-        dropZone.addEventListener('click', function() {
-          fileInput.click();
-        });
-
         fileInput.addEventListener('change', function(e) {
           const file = e.target.files[0];
           if (file) {
